@@ -1,0 +1,294 @@
+﻿<!--Tela para cadastro de itens no banco de dados por parte dos administradores do sistema-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--COMEÇO DAS META TAGS-->
+        <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+        <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+        <!--FIM DAS META TAGS-->
+        <!--TÍTULO-->
+        <title>Cadastro de itens</title>
+
+        <!--Link para o css-->
+        <link rel="stylesheet" href="styleswaptool.css" />
+
+        <!--Link para os arquivos css do bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    </head>
+    <body style="padding-top:2%">
+
+        <div class="container-fluid">
+
+            <!--CADASTRO DE MARCAS-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroMarca">Marcas</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroMarca">
+                        <div class="card estilo-card">
+                            <form action="cadastroMarca.php" method="POST">
+                            <h3 class="card-title">Marca</h3>
+                            <label>Código da marca</label>
+                            <input class="form-control" type="text" name="cod_marca" />
+                            <label>Descrição</label>
+                            <input class="form-control" type="text" name="descricao" />
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE MODELO-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroModelo">Modelo</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroModelo">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Modelo</h3>
+                            <label>Código da modelo</label>
+                            <input class="form-control" type="text" name="cod_modelo" />
+                            <label>Descrição</label>
+                            <input class="form-control" type="text" name="descricao" />
+                            <label>Marca</label>
+                            <select class="form-control" name="cod_marca" id="selectMarca">
+                            </select>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CADASTRO DE DDR-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#Cadastroddr">DDR</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="Cadastroddr">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">DDR</h3>
+                            <label>Código da DDR</label>
+                            <input class="form-control" type="text" name="cod_ddr" />
+                            <label>Descrição</label>
+                            <input class="form-control" type="text" name="descricao" />
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE SOQUETE-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroSoquete">Soquete</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroSoquete">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Soquete</h3>
+                            <label>Código do soquete</label>
+                            <input class="form-control" type="text" name="cod_soquete" />
+                            <label>Descrição</label>
+                            <input class="form-control" type="text" name="descricao" />
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE PLACA MÃE-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroPlacamae">Placa mãe</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroPlacamae">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Placa mãe</h3>
+                            <label>Código da placa mãe</label>
+                            <input class="form-control" type="text" name="cod_placamae" />
+                            <label>Modelo</label>
+                            <select class="form-control" name="cod_modelo">
+                                <option selected></option>
+                            </select>
+                            <label>Soquete</label>
+                            <select class="form-control" name="cod_soquete">
+                                <option selected></option>
+                            </select>
+                            <label>DDR</label>
+                            <select class="form-control" name="cod_ddr">
+                                <option selected></option>
+                            </select>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE PLACA DE VIDEO-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroPlacadevideo">Placa de video</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroPlacadevideo">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Placa de vídeo</h3>
+                            <label>Código da placa de vídeo</label>
+                            <input class="form-control" type="text" name="cod_placadevideo" />
+                            <label>Modelo</label>
+                            <select class="form-control" name="cod_modelo">
+                                <option selected></option>
+                            </select>
+                            <label>Quantidade de memória</label>
+                            <input class="form-control" type="number" name="qnt_memoria" />
+                            <label>Soquete</label>
+                            <select class="form-control" name="cod_soquete">
+                                <option selected></option>
+                            </select>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca" id="cadastroPlacaVideo">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE PROCESSADOR-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroProcessador">Processador</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroProcessador">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Processador</h3>
+                            <label>Código do processador</label>
+                            <input class="form-control" type="text" name="cod_processador" />
+                            <label>Versão</label>
+                            <input class="form-control" type="text" name="versao" />
+                            <label>Threads</label>
+                            <input class="form-control" type="number" name="threads" />
+                            <label>Nucleos</label>
+                            <input class="form-control" type="text" name="nucleos" />
+                            <label>Frequência</label>
+                            <input class="form-control" type="text" name="frequencia" />
+                            <label>Modelo</label>
+                            <select class="form-control" name="cod_modelo">
+                                <option selected></option>
+                            </select>
+                            <label>Soquete</label>
+                            <select class="form-control" name="cod_soquete">
+                                <option selected></option>
+                            </select>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADASTRO DE RAM-->
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <button class="form-control estilo-main-btn" type="button" data-toggle="collapse" data-target="#CadastroRam">RAM</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <div class="collapse" id="CadastroRam">
+                        <div class="card estilo-card">
+                            <form action="cadastroDescricaoPeca.php" method="POST">
+                            <h3 class="card-title">Memória RAM</h3>
+                            <label>Código da memória RAM</label>
+                            <input class="form-control" type="text" name="cod_ram" />
+                            <label>Frequencia</label>
+                            <input class="form-control" type="text" name="frequencia" />
+                            <label>Quantidade de memória</label>
+                            <input class="form-control" type="number" name="qnt_memoria" />
+                            <label>DDR</label>
+                            <select class="form-control" name="cod_ddr">
+                                <option selected></option>
+                            </select>
+                            <label>Marca</label>
+                            <select class="form-control" name="cod_marca">
+                                <option selected></option>
+                            </select>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-4 col-lg-6">
+                                    <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="resposta"></div>
+        <!--Javascript para bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="custom.js"></script>
+    </body>
+</html>
+
+
