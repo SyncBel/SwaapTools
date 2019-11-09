@@ -1,0 +1,20 @@
+.menu {
+    background-color: #17254a;
+}
+
+.logo {
+    width:3em;
+}
+
+.pesquisar {
+    border-radius: 50em;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.user {
+    width: 3em;
+}
