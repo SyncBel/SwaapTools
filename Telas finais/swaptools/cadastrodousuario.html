@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+
+    <!--TÍTULO-->
+    <title>Primeira pagina com bootstrap instalado</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="C:\wamp64\www\bootstrap4\css/bootstrap.min.css" />
+
+    <!--Criando classes de formatação-->
+    <link rel="stylesheet" href="styleswaptool.css" />
+
+
+</head>
+<body class="body-estilo-cadastro-usuario">
+
+    <!--NAVBAR-->
+    <div class="container-fluid" style="width: 100%; padding:0px; height:8rem;">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-tabs nav-estilo">
+
+                    <!--Link de home com o logo do site-->
+                    <a href="#" class="navbar-brand a_logo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Input search-->
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="search" aria-label="search" />
+                    </form>
+
+                    <!--Link direto para a home-->
+                    <a href="#" class="navbar-brand home-estilo">
+                        <img src="icones/home.png" class="home" />
+                    </a>
+
+                    <!--Icone de torificação-->
+                    <a href="#" class="navbar-brand help-estilo">
+                        <img src="icones/help.png" class="help" />
+                    </a>
+
+                    <!--Link para ajuda-->
+                    <a href="#" class="navbar-brand carrinho-estilo">
+                        <img src="icones/carrinho.svg" class="carrinho" />
+                    </a>
+
+                    <!--Imagem de perfil do usuário-->
+                    <a href="#" class="navbar-brand dropdown-toggle a_estilo" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="icones/user.png" class="user_img" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownuser" style="width:30%">
+                        <a class="dropdown-item" href="#">Continue comprando</a>
+                        <a class="dropdown-item" href="#">Pedidos recebidos</a>
+                        <a class="dropdown-item" href="#">Pedidos enviados</a>
+                        <a class="dropdown-item" href="#"><img src="icones/config.png" style="width:5%; height:auto;" /> Configurações</a>
+                        <a class="dropdown-item" href="#"><img src="icones/help.png" style="width:5%; height:auto;" />Ajuda</a>
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+
+                    <!--link para cadastro de peça-->
+                    <button class="btn btn-outline-success my-4">Quero trocar</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="form-group">
+            <div class="row justify-content-center" style="margin-top:3%;">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <p class="h3 p-estilo-cadastro-usuario" style="text-align:center">Cadastro</p>
+                    <p class="h4 p-estilo-cadastro-usuario" style="margin-top: 25px; margin-bottom: 15px; text-align:center;">Para realizar seu cadastro que tal começar pelos seus dados pessoais?</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4 rounded-circle">
+                    <label class="label-estilo-cadastro-usuario">Nome:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="nome" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Sobrenome:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="sobrenome" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">CPF:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" name="cpf" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Telefone:</label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3 col-sm-2 col-lg-1">
+                    <select class="form-control select-estilo-cadastro-usuario" name="DDD">
+                        <option class="option-estilo-cadastro-usuario" selected></option>
+                    </select>
+                </div>
+                <div class="col-7 col-sm-4 col-lg-3">
+                    <input class="form-control input-estilo-cadastro-usuario" type="number" name="numero" />
+                </div>
+            </div>
+
+
+
+            <!--ENDEREÇO-->
+
+            <div class="row justify-content-center" style="margin-top:3%;">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <p class="h4 p-estilo-cadastro-usuario" style="margin-top: 25px; margin-bottom: 15px; text-align:center;">Precisamos do seu endereço para realizar as trocas!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Estado</label>
+                    <select class="form-control select-estilo-cadastro-usuario" name="estado">
+                        <option class="option-estilo-cadastro-usuario" selected></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Cidade</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="cidade" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Bairro</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="bairro" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Rua</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="rua" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Número:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="number" name="numero" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">CEP:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="CEP" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Complemento:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="complemento" />
+                </div>
+            </div>
+
+            <!--FINALIZAR CADASTRO-->
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <p class="h4 p-estilo-cadastro-usuario" style="margin-top: 25px; margin-bottom: 15px; text-align:center;">Quase lá, só precisamos de seus dados virtais!</p>
+                    <label class="label-estilo-cadastro-usuario">Email:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="email" name="email" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Senha:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="password" name="senha" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Confirme a senha:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="password" name="confirmasenha" />
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="margin:3%;" name="botaoConfirma">
+                <div class="col-5 col-sm-4 col-lg-2">
+                    <button class="btn button-estilo-cadastro-usuario form-control" type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Javascript para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

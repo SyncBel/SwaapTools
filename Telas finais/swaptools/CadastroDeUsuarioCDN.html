@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+    <!--TÍTULO-->
+    <title>Primeira pagina com bootstrap instalado</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!--Criando classes de formatação-->
+    <link rel="stylesheet" href="C:\Users\David\Documents\FATEC\swaptools/styleswaptool.css" />
+
+
+</head>
+<body class="body-estilo-cadastro-usuario">
+    <div class="container-fluid">
+        <div class="form-group">
+            <div class="row justify-content-center" style="margin-top:3%;">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <p class="h3 p-estilo-cadastro-usuario" style="text-align:center">Cadastro</p>
+                    <p class="h4 p-estilo-cadastro-usuario" style="text-align:center">Dados pessoais</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4 rounded-circle">
+                    <label class="label-estilo-cadastro-usuario">Nome:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="nome" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Sobrenome:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="sobrenome" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Email:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="email" name="email" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Senha:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="password" name="senha" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Confirme a senha:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="password" name="confirmasenha" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">CPF:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" name="cpf" />
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:3%;">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <p class="h4 p-estilo-cadastro-usuario" style="text-align:center">Endereço</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Rua</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="rua" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Número:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="number" name="numero" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">CEP:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="CEP" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4">
+                    <label class="label-estilo-cadastro-usuario">Complemento:</label>
+                    <input class="form-control input-estilo-cadastro-usuario" type="text" name="complemento" />
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin:3%;" name="botaoConfirma">
+                <div class="col-5 col-sm-4 col-lg-2">
+                    <button class="btn button-estilo-cadastro-usuario form-control" type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Javascript para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

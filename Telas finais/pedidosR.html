@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+    <!--TÍTULO-->
+    <title>Pedidos</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Criando classes de formatação-->
+    <link rel="stylesheet" href="styleswaptool.css" />
+
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark menu">
+            <a class="navbar-brand" href="home.html"><img class="logo" src="icones/logo.png" alt="SwaggTools"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <div class="navbar-nav">
+                    <form class="form-inline">
+                        <input class="form-control pesquisar" size="40" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    </form>
+                </div>
+                <div class="justify-content-end container-fluid">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item active">
+                            <center>
+                                <a class="nav-link" href="home.html"><div><i class="fas fa-1x fa-home"><img class="logo" src="icones/home.png" /></i></div>Home</a>
+                            </center>
+
+                        <li class="nav-item">
+                            <center>
+                                <a class="nav-link" href="produtos.html"><div><i class="fas fa-1x fa-store-alt"><img class="logo" src="icones/carrinho.svg" /></i></div>Minha Loja</a>
+                            </center>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="user" src="icones/user.png" alt="Foto do usuário">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="FeedSwapTool.html">Continue comprando</a>
+                                <a class="dropdown-item" href="pedidosR.html">Pedidos recebidos</a>
+                                <a class="dropdown-item" href="pedidosE">Pedidos enviados</a>
+                                <a class="dropdown-item" href="perfil.html">Configurações</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <nav>
+                    <ul class="nav nav-fill nav-tabs">
+                        <li class="nav-item selected">
+                            <a class="nav-link" href="pedidosR.html" >Pedidos enviados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedidosE.html">Pedidos recebidos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 pedidos-item rounded">
+                <div class="card-horizontal">
+                    <img src="icones/back_perfil.jpg" class="pedidos-img rounded" />
+                    <div class="card-body">
+                        <h4 class="card-title">Card de produtos recebidos</h4>
+                        <p>Nome do negociador</p>
+                        <p>tipo de peça</p>
+                        <p>modelo</p>
+                        <p>marca</p>
+                        <a href="#" class="badge badge-dark" style="text-align:right">Negar</a>
+                        <a href="#" class="badge badge-primary">Negociar</a>
+                        <a href="#" class="badge badge-success">Contatar por WhatsApp</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 pedidos-item rounded">
+                <div class="card-horizontal">
+                    <img src="icones/back_perfil.jpg" class="pedidos-img rounded" />
+                    <div class="card-body">
+                        <h4 class="card-title">Card de produtos enviados</h4>
+                        <p>Nome do negociador</p>
+                        <p>tipo de peça</p>
+                        <p>modelo</p>
+                        <p>marca</p>
+                        <a href="#" class="badge badge-dark" style="text-align:right">Negado</a>
+                        <a href="#" class="badge badge-primary">Stand by</a>
+                        <a href="#" class="badge badge-success">Aceito</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Javascript para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

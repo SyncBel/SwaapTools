@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+
+    <!--TÍTULO-->
+    <title>Primeira pagina com bootstrap instalado</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="C:\wamp64\www\bootstrap4\css/bootstrap.min.css" />
+
+    <!--Criando classes de formatação-->
+    <link rel="stylesheet" href="C:\Users\David\Documents\FATEC\swaptools/styleswaptool.css" />
+
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="container-fluid" style="width: 100%; padding:0px; height:8rem;">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-tabs nav-estilo">
+
+                    <!--Link de home com o logo do site-->
+                    <a href="#" class="navbar-brand a_logo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Input search-->
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="search" aria-label="search" />
+                    </form>
+
+                    <!--Link direto para a home-->
+                    <a href="#" class="navbar-brand home-estilo">
+                        <img src="icones/home.png" class="home" />
+                    </a>
+
+                    <!--Icone de torificação-->
+                    <a href="#" class="navbar-brand help-estilo">
+                        <img src="icones/help.png" class="help" />
+                    </a>
+
+                    <!--Link para ajuda-->
+                    <a href="#" class="navbar-brand carrinho-estilo">
+                        <img src="icones/carrinho.svg" class="carrinho" />
+                    </a>
+
+                    <!--Imagem de perfil do usuário-->
+                    <a href="#" class="navbar-brand dropdown-toggle a_estilo" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="icones/user.png" class="user_img" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownuser" style="width:30%" >
+                        <a class="dropdown-item" href="#">Continue comprando</a>
+                        <a class="dropdown-item" href="#">Pedidos recebidos</a>
+                        <a class="dropdown-item" href="#">Pedidos enviados</a>
+                        <a class="dropdown-item" href="#"><img src="icones/config.png" style="width:5%; height:auto;" /> Configurações</a>
+                        <a class="dropdown-item" href="#"><img src="icones/help.png" style="width:5%; height:auto;" />Ajuda</a>
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+
+                    <!--link para cadastro de peça-->
+                    <button class="btn btn-outline-success my-4">Quero trocar</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--FEED DO USUARIO-->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <div class="card-horizontal">
+                    <img src="icones/user.png" class="pedidos-img" />
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo</h4>
+                        <p>Nome do negociador</p>
+                        <p>tipo de peça</p>
+                        <p>modelo</p>
+                        <p>marca</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--Javascript para bootstrap-->
+    <script src="C:\wamp64\www\bootstrap4\js/jquery-3.2.1.min.js"></script>
+    <script src="C:\wamp64\www\bootstrap4\js/popper.min.js"></script>
+    <script src="C:\wamp64\www\bootstrap4\js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+/*styleswaptools*/
+
+
+
+/*NAVBAR*/
+    .menu {
+        background-color: #17254a;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        width: 3em;
+    }
+
+    .pesquisar {
+        border-radius: 50em;
+        border: none;
+    }
+
+    .body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .user {
+        width: 3em;
+    }
+
+    
+
+
+
+/* CONFIGURAÇÕES DE PERFIL DO USUÁRIO*/
+
+    div.perfil_content {
+        background-color: rgb(244,243,241);
+        top: 40px;
+    }
+
+
+    div.perfil-edit{
+        border: 2px solid;
+        background-color: white;
+    }
+
+
+    img.back-img-perfil{
+        width: 100%;
+        height: auto;
+        z-index:0;
+    }
+
+    img.perfil-img{
+        width:40%;
+        height: auto;
+        margin-top: -20%;
+        position:static;
+        z-index:1;
+        margin-left:30%;
+    }
+
+    output.nome-perfil{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+
+    button.btn-perfil {
+        color: rgb(06,45,64);
+    }
+
+    
+    input.input-perfil{
+        width: 60%;
+        margin-right:0px;
+    }
+
+    div.config-perfil-card {
+        margin-bottom: 4%;
+        padding-left: 2%;
+    }
+
+    h4.config-titulo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align:center;
+        padding-right:2%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tela de cadastro de usuário*/
+
+option.option-estilo-cadastro-usuario {
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.00);
+    background-color: rgba(220, 220, 220, 0.84);
+    border-radius: 10px;
+    font-size: smaller;
+    height: 45px;
+}
+
+select.select-estilo-cadastro-usuario {
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.00);
+    background-color: rgba(220, 220, 220, 0.84);
+    border-radius: 10px;
+    font-size: smaller;
+    height: 45px;
+}
+
+input.input-estilo-cadastro-usuario {
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.00);
+    background-color: rgba(220, 220, 220, 0.84);
+    border-radius: 10px;
+    font-size: smaller;
+    height: 45px;
+}
+
+button.button-estilo-cadastro-usuario {
+    margin-top:15px;
+    border-color: rgba(0, 0, 0, 0.00);
+    background-color: #990000;
+    color: #fff;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-variant-position: sub;
+    height: 50px;
+}
+
+body.body-general {
+    background-color: #eeeeee;
+}
+
+label.label-estilo-cadastro-usuario {
+    margin: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-left: 1%;
+}
+
+p.p-estilo-cadastro-usuario {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Tela de cadastro de itens da visão do usuario*/
+
+div.estilo-card {
+    margin-bottom: 2%;;
+}
+
+.titulos-cadastro-user{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+h4.h4-estilo-titulo-cadastro-itens-usuario {
+    text-align: center;
+    font-family: 'Franklin Gothic small', 'Arial Narrow small', Arial, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+
+div.input-photos-style-cadastro-itens-usuario {
+/*style para entrada das fotos do produto do usuario durante o cadastro de itens*/
+    height: 200px;
+    padding: 1%;
+}
+
+input.input-image-style-cadastro-itens-usuario {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+button.bt-estilo-enviar-cadastro-itens-usuario {
+    background-color: #c73434;
+    color: #ffffff;
+    height: 60px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h4.h4-estilo-titulo-cadastro-itens {
+    text-align: center;
+    font-family: 'Franklin Gothic small', 'Arial Narrow small', Arial, sans-serif;
+    margin-bottom: 2%;
+}
+
+select.select-box-cadastro-itens-usuario{
+    margin-bottom: 3%;
+}
+
+div.div-info-cadastro-itens-usuario{
+    margin-top: 3%;
+
+}
+
+button.button-metodo-envio{
+    margin-top:10%;
+    width: 150%;
+}
+
+button.envio-pago-confirma {
+    width: 100%;
+    margin: 2%;
+    margin-left: 0%;
+}
+
+/*Feed principal*/
+
+output.titulo-produto{
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+output.descricao-produto{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav.paginacao-feed{
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+img.top-color{
+    width:40%;
+    height: auto;
+
+}
+
+img.top-bw{
+    width:12%;
+    height: auto;
+
+}
+
+div.card-edit{
+    margin-bottom:2rem;
+}
+
+
+/*TELA DE PEDIDOS */
+
+.card-horizontal{
+    display:flex;
+    flex:1 1 auto;
+    border:2px;
+    border-color: blue;
+}
+
+img.pedidos-img{
+    width:35%;
+    height:auto;
+}
+
+div.pedidos-item {
+    margin-top: 2%;
+    border: 2px solid;
+    border-color: #465ecb;
+    padding-bottom: 1%;
+    padding-top: 1%;    
+    background-color: #e7e7f1;
+}
+
+
+
+
+
+
+
+/*TELA DE CADASTRO DE ITENS DO ADMIN*/
+
+
+
+button.estilo-btn-admin{
+    margin: 2%;
+    margin-left: 0%;
+    background-color: #465ecb;
+    color: #fff;
+}
+
+button.estilo-main-btn{
+    margin-top:2%;
+    background-color: #465ecb;
+    color: #fff;
+}
+
+

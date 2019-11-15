@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+    <!--TÍTULO-->
+    <title>Primeira pagina com bootstrap instalado</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Criando classes de formatação-->
+    <link rel="stylesheet" href="styleswaptool.css" />
+
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="container-fluid" style="width: 100%; padding:0px; height:8rem;">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-tabs nav-estilo">
+
+                    <!--Link de home com o logo do site-->
+                    <a href="#" class="navbar-brand a_logo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Input search-->
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="search" aria-label="search" />
+                    </form>
+
+                    <!--Link direto para a home-->
+                    <a href="#" class="navbar-brand home-estilo">
+                        <img src="icones/home.png" class="home" />
+                    </a>
+
+                    <!--Icone de torificação-->
+                    <a href="#" class="navbar-brand help-estilo">
+                        <img src="icones/help.png" class="help" />
+                    </a>
+
+                    <!--Link para ajuda-->
+                    <a href="#" class="navbar-brand carrinho-estilo">
+                        <img src="icones/carrinho.svg" class="carrinho" />
+                    </a>
+
+                    <!--Imagem de perfil do usuário-->
+                    <a href="#" class="navbar-brand dropdown-toggle a_estilo" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="icones/user.png" class="user_img" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownuser" style="width:30%">
+                        <a class="dropdown-item" href="#">Continue comprando</a>
+                        <a class="dropdown-item" href="#">Pedidos recebidos</a>
+                        <a class="dropdown-item" href="#">Pedidos enviados</a>
+                        <a class="dropdown-item" href="#"><img src="icones/config.png" style="width:5%; height:auto;" /> Configurações</a>
+                        <a class="dropdown-item" href="#"><img src="icones/help.png" style="width:5%; height:auto;" />Ajuda</a>
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+
+                    <!--link para cadastro de peça-->
+                    <button class="btn btn-outline-success my-4">Quero trocar</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--FEED DO USUARIO-->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="card">
+                    <nav>
+                        <ul class="nav nav-fill nav-pills">
+                            <li class="nav-item"><a class="nav-link" href="#">Tudo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Processador</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Placa de Vídeo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Placa Mãe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">RAM</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Outros</a></li>
+                        </ul>
+                    </nav>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div><div class="col-3">
+                                <div class="card card-edit">
+                                    <img src="icones/back_perfil.jpg" class="img-fluid rounded" />
+                                    <div class="card-body">
+                                        <output class="titulo-produto card-title" name="cod_peça">Placa de vídeo</output>
+                                        <output class="descricao-produto" name="cod_descricaopeca">Aqui dentro vai ser o texto de descrição do produto que será trocado</output>
+                                        <output class="descricao-produto" name="marca">Marca</output><br />
+                                        <output class="descricao-produto" name="modelo">Modelo</output><br />
+                                        <output class="descricao-produto" name="peça">Peça</output><br />
+                                        <img src="icones/top-color.png" class="top-color" />
+                                        <img src="icones/top-bw.png" class="top-bw" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Javascript para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

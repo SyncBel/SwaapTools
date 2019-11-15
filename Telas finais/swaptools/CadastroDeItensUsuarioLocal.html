@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+
+
+    <!--TÍTULO-->
+    <title>SwapTool - Cadastro de itens</title>
+
+    <!--Link do css-->
+    <link rel="stylesheet" href="styleswaptool.css" />
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 nav-div">
+                <nav class="nav nav-tabs nav-estilo">
+
+                    <!--Link de home com o logo do site-->
+                    <a href="#" class="nav-link a_logo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Input search-->
+                    <div class="form-group search">
+                        <span class="form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+
+                    <!--Link direto para a home-->
+                    <a href="#" class="nav-link a_estilo">
+                        <img src="icones/home.png" class="logo" />
+                    </a>
+
+                    <!--Icone de torificação-->
+                    <a href="#" class="nav-link a_estilo">
+                        <img src="icones/notificação.png" class="logo" />
+                    </a>
+
+                    <!--Link para ajuda-->
+                    <a href="#" class="nav-link a_estilo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Link para minha loja-->
+                    <a href="#" class="nav-link a_estilo">
+                        <img src="icones/logo.png" class="logo" />
+                    </a>
+
+                    <!--Imagem de perfil do usuário-->
+                    <a href="#" class="nav-link a_estilo">
+                        <img src="icones/user.png" class="user_img" />
+                    </a>
+
+                    <!--link para cadastro de peça-->
+                    <form action="#">
+                        <button type="submit" class="btn cadastro-tela">Quero trocar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--CARD PARA CADASTRO DO PROCESSADOR-->
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="card estilo-card">
+                    <h3 class="card-title titulos-cadastro-user">Processador</h3>
+                    <label class="titulos-cadastro-user">Quanto melhores as fotos mais chance de vender você tem!</label>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-7 col-sm-8 col-xs-1 col-11 input-photos-style-cadastro-itens-usuario">
+                            <input type="file" class="form-control input-image-style-cadastro-itens-usuario" src="icones/user.png" />
+                        </div>
+                        <div class="col-lg-2 col-md-7 col-sm-8 col-xs-1 col-11 input-photos-style-cadastro-itens-usuario">
+                            <input type="file" class="form-control input-image-style-cadastro-itens-usuario" />
+                        </div>
+                        <div class="col-lg-2 col-md-7 col-sm-8 col-xs-1 col-11 input-photos-style-cadastro-itens-usuario">
+                            <input type="file" class="form-control input-image-style-cadastro-itens-usuario" />
+                        </div>
+                        <div class="col-lg-2 col-md-7 col-sm-8 col-xs-1 col-11 input-photos-style-cadastro-itens-usuario">
+                            <input type="file" class="form-control input-image-style-cadastro-itens-usuario" />
+                        </div>
+                        <div class="col-lg-2 col-md-7 col-sm-8 col-xs-1 col-11 input-photos-style-cadastro-itens-usuario">
+                            <input type="file" class="form-control input-image-style-cadastro-itens-usuario" />
+                        </div>
+                    </div>
+                    <h4 class="h4-estilo-titulo-cadastro-itens-usuario">
+                        Uma boa descrição separa os ótimos comerciantes dos bons!
+                    </h4>
+                    <!--ENTRADA DO NOME DO PRODUTO-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Nome do produto</label>
+                                <input type="text" class="form-control rounded-2" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Condições</label>
+                                <select class="form-control">
+                                    <option>Novo</option>
+                                    <option>Usado</option>
+                                    <option selected></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Descrição</label>
+                                <textarea class="form-control rounded-2" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--BOTÃO DE ENVIAR DADOS-->
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-4 col-lg-6">
+                            <button class="form-control estilo-btn-admin" type="submit" name="EnviarMarca">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Javascript para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

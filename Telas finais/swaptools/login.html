@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" style="height:100%">
+<head>
+    <!--COMEÇO DAS META TAGS-->
+    <meta charset="utf-8" /> <!--TIPO DE CARACTER-->
+    <meta name="viewport" content="width = device-width, inicial-scale=1, shrink-to-fit=no" />
+    <!--FIM DAS META TAGS-->
+
+    <!--TÍTULO-->
+    <title>Primeira pagina com bootstrap instalado</title>
+
+    <!--Link para os arquivos css do bootstrap-->
+    <link rel="stylesheet" href="C:\wamp64\www\bootstrap4\css/bootstrap.min.css" />
+
+    <!--Criando classes de formatação-->
+    <style type="text/css">
+        
+        input.input-estilo{
+            border:solid;
+            border-color:rgba(0, 0, 0, 0.00);
+            background-color: rgba(245, 245, 245, 0.84);
+            -moz-border-radius:20px;
+            -webkit-border-radius:20px;
+            border-radius:20px;
+        }
+        button.bt-estilo{
+            border-color:rgba(0, 0, 0, 0.00);
+            background-color:aquamarine;
+            -moz-border-radius:13px;
+            -webkit-border-radius:13px;
+            border-radius:13px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body.body-estilo{
+            background-color: #b2aeae;       
+        }
+        .row{
+            margin:2%;
+        }
+
+        p.p-estilo{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+
+
+</head>
+<body class="body-estilo">
+    <div class="container-fluid">
+        <div class="form-group">
+            <div class="row justify-content-center" style="margin-top:5%;" name="Nome">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <p class="h3 p-estilo" style="text-align:center">Login</p>
+                </div>
+            </div>
+            <div class="row justify-content-center" name="Email">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <input class="form-control input-estilo" type="email" id="EmailForm" value="Email"/>
+                </div>
+            </div>
+            <div class="row justify-content-center" name="Senha">
+                <div class="col-8 col-sm-6 col-lg-4">
+                    <input class="form-control input-estilo" type="password" id="PasswordForm" value="Senha"/>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin:3%;" name="botaoConfirma">
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <button class="btn bt-estilo form-control" type="reset">Esqueci a senha</button>
+                </div>
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <button class="btn bt-estilo form-control" type="submit" onclick="EnviarDadosDeLogin()">Entrar</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!--JAVASCRIPT-->
+    <script>
+        //Pegando informação do formulário e colocando numa variavel
+        function EnviarDadosDeLogin() {
+            var emailForm = document.getElementById("EmailForm");
+            var passWordForm = document.getElementById("PasswordForm");
+            alert(emailForm.value    + " " +passWordForm.value )
+        }
+        
+    </script>
+
+
+    <!--Javascript para bootstrap-->
+    <script src="C:\wamp64\www\bootstrap4\js/jquery-3.2.1.min.js"></script>
+    <script src="C:\wamp64\www\bootstrap4\js/popper.min.js"></script>
+    <script src="C:\wamp64\www\bootstrap4\js/bootstrap.min.js"></script>
+</body>
+</html>
